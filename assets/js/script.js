@@ -16,6 +16,22 @@ window.addEventListener("load", function () {
 });
 
 
+/**
+ * FIND A TABLE BUTTON
+ */
+
+const findTableBtn = document.querySelector('.header .btn[href="#"]');
+if (findTableBtn) {
+  findTableBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const contactSection = document.querySelector("#contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+}
+
+
 
 /**
  * add event listener on multiple elements
